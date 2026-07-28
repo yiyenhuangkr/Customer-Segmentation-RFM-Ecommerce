@@ -7,7 +7,7 @@
 
 **Business Problem:** The company lacks a systematic way to differentiate customers by value and engagement, resulting in one-size-fits-all marketing that wastes budget on low-value customers while under-investing in high-value customers at risk of churning.
 
-**Solution:** Using 74,628 delivered transactions from 43,233 unique customers, this project applied RFM (Recency, Frequency, Monetary) analysis combined with K-means clustering to segment customers into four actionable groups, each paired with a tailored marketing strategy.
+**Solution:** After filtering the dataset to 74,628 delivered transactions, RFM analysis and K-means clustering were applied to 38,772 unique customers with at least one delivered order. The customers were segmented into four actionable groups, each paired with a tailored marketing strategy.
 
 **Key Finding:** 36.6% of customers (15,812 people) fall into a **"High-Value At-Risk"** segment — customers with historical spending and purchase frequency on par with the most active customers, but who have gone quiet recently. This segment alone represents an estimated **$39M+ in historical revenue** and is the single highest-priority group for win-back campaigns.
 
@@ -73,10 +73,10 @@ The goal of this project was to answer: **Which customers should marketing prior
 
 | Segment | Size | Avg. Recency | Avg. Frequency | Avg. Monetary | Recommended Strategy |
 |---|---|---|---|---|---|
-| **High-Value Active** | 5,889 (13.6%) | 85 days | 2.65 orders | $2,455 | VIP perks, early access to new products, loyalty program enrollment |
-| **High-Value At-Risk** | 15,812 (36.6%) | 656 days | 2.59 orders | $2,466 | **Top priority.** Win-back campaign with time-limited incentives; proven spending history makes this the highest-ROI re-engagement target |
-| **Dormant Mid-Value** | 10,433 (24.1%) | 995 days | 1.03 orders | $1,262 | Re-purchase incentive to convert one-time buyers into repeat customers |
-| **Low-Value Dormant** | 6,638 (15.4%) | 859 days | 1.11 orders | $264 | Low-cost automated email nurture only; not a priority for active investment |
+| **High-Value Active** | 5,889 (15.2%) | 85 days | 2.65 orders | $2,455 | VIP perks, early access to new products, loyalty program enrollment |
+| **High-Value At-Risk** | 15,812 (40.8%) | 656 days | 2.59 orders | $2,466 | **Top priority.** Win-back campaign with time-limited incentives; proven spending history makes this the highest-ROI re-engagement target |
+| **Dormant Mid-Value** | 10,433 (26.9%) | 995 days | 1.03 orders | $1,262 | Re-purchase incentive to convert one-time buyers into repeat customers |
+| **Low-Value Dormant** | 6,638 (17.1%) | 859 days | 1.11 orders | $264 | Low-cost automated email nurture only; not a priority for active investment |
 
 **Key insight:** Category and geographic preference were tested as potential segmentation refinements but showed negligible statistical association with cluster membership (Cramér's V = 0.09) — segment strategy should stay focused on engagement recency and spending behavior rather than product or location targeting.
 
