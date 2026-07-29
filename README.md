@@ -9,7 +9,7 @@
 
 **Solution:** After filtering the dataset to 74,628 delivered transactions, RFM analysis and K-means clustering were applied to 38,772 unique customers with at least one delivered order. The customers were segmented into four actionable groups, each paired with a tailored marketing strategy.
 
-**Key Finding:** 36.6% of customers (15,812 people) fall into a **"High-Value At-Risk"** segment — customers with historical spending and purchase frequency on par with the most active customers, but who have gone quiet recently. This segment alone represents an estimated **$39M+ in historical revenue** and is the single highest-priority group for win-back campaigns.
+**Key Finding:** 40.8% of customers (15,812 people) fall into a **"High-Value At-Risk"** segment — customers with historical spending and purchase frequency on par with the most active customers, but who have gone quiet recently. This segment alone represents an estimated **$39M+ in historical revenue** and is the single highest-priority group for win-back campaigns.
 
 **Next Steps:** Deploy a tiered win-back campaign targeting the At-Risk segment, A/B test incentive structures, and integrate segment labels into the CRM for ongoing use by the marketing team.
 
